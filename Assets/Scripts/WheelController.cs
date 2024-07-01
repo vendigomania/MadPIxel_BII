@@ -36,6 +36,8 @@ public class WheelController : MonoBehaviour
             LaunchWheel, 
             OnWheelAnimationEnd, 
             wheelValues.Select(val => val.ToString()).ToArray());
+
+        wheelScreen.UpdateView(mana, coins);
     }
 
     private void LaunchWheel()
